@@ -1,0 +1,47 @@
+Data Engineering
+------------------
+To design,build and maintain 
+
+build (ETL/ELT)
+data architecture (data lakes,warehouses,mart)
+availability
+integration data from various source (web,db,file,API,cloud etc.,)
+Optimize performance of data
+ |
+[Result]
+
+Data Science 
+--------------
+[Data analysis ] --->[Machine Learning - model]
+ -------------			|--------------->Deeplearning  ->GenAI ->LLM
+ results 								  |-->RAG
+  ->EDA									
+ statistical modeling 
+ Hypothesis testing
+ |
+ Visualization  
+ |
+ cleaned --------------------->model //apply ML
+						  
+
+[Deployed] 
+ |
+ Continuous Monitoring
+ ----------------------
+  |->Monitoring 
+      |->Infrastructure 
+      |
+      |->Application 	
+	 -------------
+				
+  |-> TSDB, Visualization
+	
+==========================================================================================================
+
+RAG - llm
+-----------
+Data ->split ->embedding -> vectorDB ->retrive ->prompt ->llm ->(UI) 
+						
+streamlit (UI)
+-----------------------------------------------------------------------
+
