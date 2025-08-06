@@ -1,0 +1,11 @@
+1. Download Java
+https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html#license-lightbox
+
+2. Download Python
+# OK
+3. Download Apache Spark
+https://spark.apache.org/downloads.html
+
+4. Download Hadoop Winutils and hadoop.dll 
+https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz
+5. Set Environmental variables
