@@ -1,0 +1,49 @@
+1. Go to login path ( cd {Enter} )
+2. pwd {Enter}
+3. ls {Enter}
+4. ls airflow {Enter}
+
+5. vi pETL.py {Enter}
+
+press i <== insert  ; Go to GitHub page ->
+
+<paste> (Right Click ->Click paste)
+
+press ESC  :wq 
+---------  ====
+6. ls {Enter}
+pETL.py 
+
+7. vi dag_script.py {Enter}
+
+ press i <== insert ; Go to GitHub page ->copy dag_script.py content //copy
+ <paste> (Right Click)
+ press ESC :wq
+
+8. ls {Enter}
+pETL.py dag_script.py
+
+9. vi wrapper_script {Enter}
+python /home/<yourlogin_name>pETL.py
+:wq
+
+10. vi mydb.py {Enter}
+
+ press 'i'  <== Go To GitHub ->copy mydb.py file content //copy
+ <paste> 
+ :wq
+-----------------------------------------------------
+
+11. pip install apache-airflow pandas 
+
+12. ls 
+ airflow <== 
+
+13. python mydb.py # To create database
+
+14. # To schedule the job - copy dag_script.py file into /home/userName/airflow/dags/
+			
+     cp dag_script.py /home/<userName>/airflow/dags/
+
+15.  Go to Airflow UI 
+-----------------------
