@@ -1,1 +1,40 @@
+Lab instance
+|
+windows:
+
+|
+open command prompt -> python -V
+
+if not installed => python.org portal ->download ->download python ->install
+
+
+		select -> [.] Add path  //after installation is done
+
+|
+open new command prompt => python -V
+			  3.13
+			  pip install streamlit 
+
+			-------------------------------
+			  open python editor (or) IDLE -> p1.py
+			  
+			  import streamlit as st
+			  st.title('welcome')
+
+			  save this file
+			-----------------------------
+			 python -m streamlit run p1.py  # OK
+
+			 email: admin@example.com
+
+			 close this window
+
+			write/copy paste mycode -> file: p2.py  p3.py 
+
+			Jupyter
+			----------
+			import os
+			os.getcwd() -> see the path
+
+			To run jupyter=>  ! streamlit run p1.py
 
