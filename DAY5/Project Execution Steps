@@ -1,0 +1,53 @@
+To Run this ML Project - monitoring in prometheus and grafana
+----------------------------------------------------------------
+https://github.com/pakarthikstudent/DataEngineering__MLOps/tree/main/DAY5/Project_Files
+
+Step 1: Create a newFolder (ex: mkdir MLMonitoring )
+|
+Step 2: download all the files except Monitoring_Steps ->place it into Your NewFolder (ex: MLMonitoring)
+|
+Step 3: open windows command prompt -> Go to MLMonitoring Folder 
+|
+Step 4: python -m venv .venv 
+|
+Step 5: dir
+|
+Step 6: .venv\Scripts\activate {Enter}
+
+(.venv) C:\users\user123\MLMonitoring> 
+|
+Step 7: pip install -r requirements.txt
+...
+....
+
+(.venv) C:\users\user123\MLMonitoring>   <-- this prompt will come 
+|
+Step 8: C:\users\user123\MLMonitoring> python app.py {Enter}
+
+flask app will open 
+127.0.0.1:5000
+|
+Step 9: open a broswer -> 127.0.0.1:5000/health
+			  127.0.0.1:5000/metrics 
+				.... 
+|
+Step 10: Go to prometheus.yml 
+|
+Step 11: Add below content below Scrape_Configs
+ 
+  - job_name: 'myappML_Model'
+    static_configs:
+      - targets: ['localhost:5000']
+
+Step 12: Save this file 
+|
+Step 13: restart prometheus.exe 
+|
+Step 14: Go to prometheus -> http://127.0.0.1:9090/targets 
+				# see the myappML_Model - target 
+|
+Step 15: Go to prometheus query broswer -> app... ...
+|
+Step 16: Go to Grafana ->Create Dashboard -> ....
+==============================================================================================================
+
